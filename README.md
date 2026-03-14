@@ -21,6 +21,8 @@ custom_pin: ^!selector:PC13
 ```
 One switch must define a "custom" signal which will clear the MaterialSelector input so you can enter material details through KlipperScreen, Mainsail/Fluidd, etc.
 
+You will also need to add `RESET_LANE_MATERIAL LANE={lane_name}` to your HH or AFC post-load macro. This checks the current position of the switch when a new spool is loaded and sets the material to whatever is selected if you don't turn the switch. (Without this, if you ejected a spool and loaded a new spool of the same material, the material name would be empty unless you set the switch to a different material and then back again.)
+
 Obviously this will use up a lot of GPIO pins, so you will probably need an additonal MCU board to handle them. The good news is because this board will only be handling switch inputs, you have some very inexpensive options. This [STM32 board from WeAct](https://www.aliexpress.com/item/1005006342506388.html) (I'm using the F446 variant) is a great option - for less than £5 (or $6), you get dozens of GPIOs. Documentation is minimal and there are some pins that don't work as inputs, so you will need to do some trial and error.
 
 <details>
