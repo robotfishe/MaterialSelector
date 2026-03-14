@@ -27,26 +27,27 @@ Obviously this will use up a lot of GPIO pins, so you will probably need an addi
 
 <details>
   <summary>Pins confirmed working on STM32F446 (click to expand):</summary>
-  - PA0
-  - PA2
-  - PA3
-  - PA7
-  - PA10
-  - PA12
-  - PB0
-  - PB1
-  - PB2
-  - PB5
-  - PB10
-  - PB12
-  - PB14
-  - PC1
-  - PC2
-  - PC4
-  - PC6
-  - PC8
-  - PC10
-  - PC13
+<ul>
+<li> PA0 </li>
+<li> PA2 </li>
+<li> PA3 </li>
+<li> PA7 </li>
+<li> PA10 </li>
+<li> PA12 </li>
+<li> PB0 </li>
+<li> PB1 </li>
+<li> PB2 </li>
+<li> PB5 </li>
+<li> PB10 </li>
+<li> PB12 </li>
+<li> PB14 </li>
+<li> PC1 </li>
+<li> PC2 </li>
+<li> PC4 </li>
+<li> PC6 </li>
+<li> PC8 </li>
+<li> PC10 </li>
+<li> PC13 </li></ul>
 </details>
 
 You can use the above boards over USB or CAN. CAN will require a transceiver module like [this one](https://www.aliexpress.com/item/1005006938593904.html).
