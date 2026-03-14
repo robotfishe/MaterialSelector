@@ -11,6 +11,7 @@ The common contact on each switch should be wired to ground, and each of the oth
 
 ```
 [material_selector lane1]
+mmu_type: afc   # defaults to "afc"; you can also use "happy_hare"
 preset1_pin: ^!selector:PB5
 preset1_material: PLA
 preset2_pin: ^!selector:PC1
