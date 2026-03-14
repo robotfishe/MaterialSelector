@@ -19,7 +19,7 @@ preset3_pin: ^!selector:PA3
 preset3_material: ASA
 custom_pin: ^!selector:PC13
 ```
-One switch must define a "custom" signal which will clear the MaterialSelector input so you can enter material details through KlipperScreen, Mainsail/Fluidd, etc.
+One pins must define a "custom" signal which will clear the MaterialSelector input so you can enter material details through KlipperScreen, Mainsail/Fluidd, etc. For each of the other pins, you can define the material to match one of your most-used filament types.
 
 You will also need to add `RESET_LANE_MATERIAL LANE={lane_name}` to your HH or AFC post-load macro. This checks the current position of the switch when a new spool is loaded and sets the material to whatever is selected if you don't turn the switch.
 
